@@ -2,8 +2,6 @@ package kr.hs.e_mirim.eunji057.enterheart;
 
 import android.net.Uri;
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
@@ -15,7 +13,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -174,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    HomeFragment tab1 = new HomeFragment();
+                    WriteFragment tab1 = new WriteFragment();
                     return tab1;
                 case 1:
                     FriendFragment tab2 = new FriendFragment();
@@ -206,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
                 case 1:
                     return "친구";
                 case 2:
-                    return "자기반성";
+                    return "통계";
                 case 3:
                     return "더보기";  //암호, 알람
             }
